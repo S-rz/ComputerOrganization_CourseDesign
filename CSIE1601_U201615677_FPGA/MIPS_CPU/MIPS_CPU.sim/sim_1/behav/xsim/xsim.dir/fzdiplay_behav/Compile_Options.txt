@@ -1,0 +1,1 @@
+-wto "7ef242b78e064de1931493a6c61ee044" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "fzdiplay_behav" "xil_defaultlib.fzdiplay" "xil_defaultlib.glbl" -log "elaborate.log" 

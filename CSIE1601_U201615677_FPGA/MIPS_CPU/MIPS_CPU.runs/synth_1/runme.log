@@ -1,0 +1,619 @@
+
+*** Running vivado
+    with args -log MipsCPU.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source MipsCPU.tcl
+
+
+****** Vivado v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source MipsCPU.tcl -notrace
+Command: synth_design -top MipsCPU -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5072 
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/zeroextension_1.v:9]
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/zeroextension_2.v:9]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 398.125 ; gain = 109.227
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'MipsCPU' [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/MipsCPU.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clock_cpu' [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/clock_cpu.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'clock_cpu' (1#1) [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/clock_cpu.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Counter' [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/Counter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Counter' (2#1) [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/Counter.v:1]
+INFO: [Synth 8-6157] synthesizing module 'PCreg' [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/PCreg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PCreg' (3#1) [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/PCreg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'display' [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/display.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clock' [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/clock.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'clock' (4#1) [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/clock.v:1]
+INFO: [Synth 8-226] default block is never used [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/display.v:66]
+INFO: [Synth 8-226] default block is never used [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/display.v:285]
+WARNING: [Synth 8-567] referenced signal 'led_A' should be on the sensitivity list [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/display.v:65]
+WARNING: [Synth 8-567] referenced signal 'state' should be on the sensitivity list [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/display.v:65]
+WARNING: [Synth 8-567] referenced signal 'leddata' should be on the sensitivity list [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/display.v:65]
+WARNING: [Synth 8-567] referenced signal 'Ones' should be on the sensitivity list [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/display.v:65]
+WARNING: [Synth 8-567] referenced signal 'JOnes' should be on the sensitivity list [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/display.v:65]
+WARNING: [Synth 8-567] referenced signal 'BOnes' should be on the sensitivity list [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/display.v:65]
+WARNING: [Synth 8-567] referenced signal 'ramdata' should be on the sensitivity list [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/display.v:65]
+WARNING: [Synth 8-567] referenced signal 'led_B' should be on the sensitivity list [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/display.v:65]
+WARNING: [Synth 8-567] referenced signal 'Tens' should be on the sensitivity list [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/display.v:65]
+WARNING: [Synth 8-567] referenced signal 'JTens' should be on the sensitivity list [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/display.v:65]
+WARNING: [Synth 8-567] referenced signal 'BTens' should be on the sensitivity list [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/display.v:65]
+WARNING: [Synth 8-567] referenced signal 'led_C' should be on the sensitivity list [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/display.v:65]
+WARNING: [Synth 8-567] referenced signal 'Hundreds' should be on the sensitivity list [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/display.v:65]
+WARNING: [Synth 8-567] referenced signal 'JHundreds' should be on the sensitivity list [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/display.v:65]
+WARNING: [Synth 8-567] referenced signal 'BHundreds' should be on the sensitivity list [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/display.v:65]
+WARNING: [Synth 8-567] referenced signal 'led_D' should be on the sensitivity list [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/display.v:65]
+WARNING: [Synth 8-567] referenced signal 'Thousands' should be on the sensitivity list [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/display.v:65]
+WARNING: [Synth 8-567] referenced signal 'JThousands' should be on the sensitivity list [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/display.v:65]
+WARNING: [Synth 8-567] referenced signal 'BThousands' should be on the sensitivity list [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/display.v:65]
+WARNING: [Synth 8-567] referenced signal 'led_E' should be on the sensitivity list [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/display.v:65]
+WARNING: [Synth 8-567] referenced signal 'led_F' should be on the sensitivity list [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/display.v:65]
+WARNING: [Synth 8-567] referenced signal 'led_G' should be on the sensitivity list [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/display.v:65]
+WARNING: [Synth 8-567] referenced signal 'led_H' should be on the sensitivity list [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/display.v:65]
+WARNING: [Synth 8-567] referenced signal 'num' should be on the sensitivity list [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/display.v:65]
+INFO: [Synth 8-6157] synthesizing module 'to10' [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/to10.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'to10' (5#1) [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/to10.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'display' (6#1) [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/display.v:1]
+INFO: [Synth 8-6157] synthesizing module 'zeroextension_1' [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/zeroextension_1.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'zeroextension_1' (7#1) [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/zeroextension_1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'zeroextension_2' [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/zeroextension_2.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'zeroextension_2' (8#1) [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/zeroextension_2.v:1]
+INFO: [Synth 8-6157] synthesizing module 'signextension' [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/signextension.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'signextension' (9#1) [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/signextension.v:1]
+INFO: [Synth 8-6157] synthesizing module 'control' [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/control.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'control' (10#1) [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/control.v:1]
+INFO: [Synth 8-6157] synthesizing module 'RegFiles' [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/Regfiles.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'RegFiles' (11#1) [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/Regfiles.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/ALU.v:1]
+	Parameter sll bound to: 4'b0000 
+	Parameter sra bound to: 4'b0001 
+	Parameter srl bound to: 4'b0010 
+	Parameter mul bound to: 4'b0011 
+	Parameter div bound to: 4'b0100 
+	Parameter add bound to: 4'b0101 
+	Parameter sub bound to: 4'b0110 
+	Parameter And bound to: 4'b0111 
+	Parameter Or bound to: 4'b1000 
+	Parameter Xor bound to: 4'b1001 
+	Parameter Nor bound to: 4'b1010 
+	Parameter slt bound to: 4'b1011 
+	Parameter sltu bound to: 4'b1100 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/ALU.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (12#1) [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/ALU.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Rom' [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/Rom.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_0' [D:/vivado_test/MIPS_CPU/MIPS_CPU.runs/synth_1/.Xil/Vivado-6208-LAPTOP/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_0' (13#1) [D:/vivado_test/MIPS_CPU/MIPS_CPU.runs/synth_1/.Xil/Vivado-6208-LAPTOP/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Rom' (14#1) [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/Rom.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RAM' [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/RAM.v:1]
+WARNING: [Synth 8-567] referenced signal 'change_ram' should be on the sensitivity list [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/RAM.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'RAM' (15#1) [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/RAM.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Mux' [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/Mux.v:1]
+	Parameter Width bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Mux' (16#1) [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/Mux.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Mux__parameterized0' [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/Mux.v:1]
+	Parameter Width bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Mux__parameterized0' (16#1) [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/Mux.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Mux__parameterized1' [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/Mux.v:1]
+	Parameter Width bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Mux__parameterized1' (16#1) [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/Mux.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MipsCPU' (17#1) [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/MipsCPU.v:1]
+WARNING: [Synth 8-3331] design RAM has unconnected port address[31]
+WARNING: [Synth 8-3331] design RAM has unconnected port address[30]
+WARNING: [Synth 8-3331] design RAM has unconnected port address[29]
+WARNING: [Synth 8-3331] design RAM has unconnected port address[28]
+WARNING: [Synth 8-3331] design RAM has unconnected port address[27]
+WARNING: [Synth 8-3331] design RAM has unconnected port address[26]
+WARNING: [Synth 8-3331] design RAM has unconnected port address[25]
+WARNING: [Synth 8-3331] design RAM has unconnected port address[24]
+WARNING: [Synth 8-3331] design RAM has unconnected port address[23]
+WARNING: [Synth 8-3331] design RAM has unconnected port address[22]
+WARNING: [Synth 8-3331] design RAM has unconnected port address[21]
+WARNING: [Synth 8-3331] design RAM has unconnected port address[20]
+WARNING: [Synth 8-3331] design RAM has unconnected port address[19]
+WARNING: [Synth 8-3331] design RAM has unconnected port address[18]
+WARNING: [Synth 8-3331] design RAM has unconnected port address[17]
+WARNING: [Synth 8-3331] design RAM has unconnected port address[16]
+WARNING: [Synth 8-3331] design RAM has unconnected port address[15]
+WARNING: [Synth 8-3331] design RAM has unconnected port address[14]
+WARNING: [Synth 8-3331] design RAM has unconnected port address[13]
+WARNING: [Synth 8-3331] design RAM has unconnected port address[12]
+WARNING: [Synth 8-3331] design RAM has unconnected port address[1]
+WARNING: [Synth 8-3331] design RAM has unconnected port address[0]
+WARNING: [Synth 8-3331] design RAM has unconnected port ram_addr[31]
+WARNING: [Synth 8-3331] design RAM has unconnected port ram_addr[30]
+WARNING: [Synth 8-3331] design RAM has unconnected port ram_addr[29]
+WARNING: [Synth 8-3331] design RAM has unconnected port ram_addr[28]
+WARNING: [Synth 8-3331] design RAM has unconnected port ram_addr[27]
+WARNING: [Synth 8-3331] design RAM has unconnected port ram_addr[26]
+WARNING: [Synth 8-3331] design RAM has unconnected port ram_addr[25]
+WARNING: [Synth 8-3331] design RAM has unconnected port ram_addr[24]
+WARNING: [Synth 8-3331] design RAM has unconnected port ram_addr[23]
+WARNING: [Synth 8-3331] design RAM has unconnected port ram_addr[22]
+WARNING: [Synth 8-3331] design RAM has unconnected port ram_addr[21]
+WARNING: [Synth 8-3331] design RAM has unconnected port ram_addr[20]
+WARNING: [Synth 8-3331] design RAM has unconnected port ram_addr[19]
+WARNING: [Synth 8-3331] design RAM has unconnected port ram_addr[18]
+WARNING: [Synth 8-3331] design RAM has unconnected port ram_addr[17]
+WARNING: [Synth 8-3331] design RAM has unconnected port ram_addr[16]
+WARNING: [Synth 8-3331] design RAM has unconnected port ram_addr[15]
+WARNING: [Synth 8-3331] design RAM has unconnected port ram_addr[14]
+WARNING: [Synth 8-3331] design RAM has unconnected port ram_addr[13]
+WARNING: [Synth 8-3331] design RAM has unconnected port ram_addr[12]
+WARNING: [Synth 8-3331] design RAM has unconnected port ram_addr[1]
+WARNING: [Synth 8-3331] design RAM has unconnected port ram_addr[0]
+WARNING: [Synth 8-3331] design display has unconnected port reset
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 438.371 ; gain = 149.473
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 438.371 ; gain = 149.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 438.371 ; gain = 149.473
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0/dist_mem_gen_0_in_context.xdc] for cell 'mips_rom/Rom'
+Finished Parsing XDC File [d:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0/dist_mem_gen_0_in_context.xdc] for cell 'mips_rom/Rom'
+Parsing XDC File [D:/vivado_test/MIPS_CPU/Nexys4DDR_Master.xdc]
+WARNING: [Vivado 12-507] No nets matched 'reset_IBUF'. [D:/vivado_test/MIPS_CPU/Nexys4DDR_Master.xdc:10]
+WARNING: [Vivado 12-507] No nets matched 'change_IBUF'. [D:/vivado_test/MIPS_CPU/Nexys4DDR_Master.xdc:11]
+Finished Parsing XDC File [D:/vivado_test/MIPS_CPU/Nexys4DDR_Master.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/vivado_test/MIPS_CPU/Nexys4DDR_Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/MipsCPU_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/vivado_test/MIPS_CPU/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/MipsCPU_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/MipsCPU_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 800.641 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 800.641 ; gain = 511.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 800.641 ; gain = 511.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for mips_rom/Rom. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 800.641 ; gain = 511.742
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "SLTI" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ORI" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "BLEZ" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDI" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ANDI" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDIU" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "LW" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SW" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "LH" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "JAL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "BEQ" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "BNE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "J" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/ALU.v:26]
+WARNING: [Synth 8-327] inferring latch for variable 'r_reg' [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/ALU.v:28]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 800.641 ; gain = 511.742
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 34    
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---Muxes : 
+	  14 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 10    
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 8     
+	   3 Input      4 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 44    
+	   8 Input      1 Bit        Muxes := 16    
+	   2 Input      1 Bit        Muxes := 32    
+	  14 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module MipsCPU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+Module clock_cpu 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module PCreg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module clock 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 8     
+	   3 Input      4 Bit        Muxes := 4     
+	   8 Input      1 Bit        Muxes := 16    
+Module control 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 44    
+Module RegFiles 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---Muxes : 
+	  14 Input     32 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 1     
+Module RAM 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+Module Mux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module Mux__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module Mux__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [D:/vivado_test/MIPS_CPU/MIPS_CPU.srcs/sources_1/new/ALU.v:37]
+DSP Report: Generating DSP r0, operation Mode is: A*B.
+DSP Report: operator r0 is absorbed into DSP r0.
+DSP Report: operator r0 is absorbed into DSP r0.
+DSP Report: Generating DSP r0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator r0 is absorbed into DSP r0.
+DSP Report: operator r0 is absorbed into DSP r0.
+DSP Report: Generating DSP r0, operation Mode is: A*B.
+DSP Report: operator r0 is absorbed into DSP r0.
+DSP Report: operator r0 is absorbed into DSP r0.
+DSP Report: Generating DSP r0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator r0 is absorbed into DSP r0.
+DSP Report: operator r0 is absorbed into DSP r0.
+INFO: [Synth 8-5546] ROM "mips_control/LH" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mips_control/LW" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mips_control/ORI" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mips_control/SLTI" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mips_control/ADDI" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mips_control/ADDIU" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mips_control/ANDI" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mips_control/SW" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design display has unconnected port reset
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 800.641 ; gain = 511.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+------------------+-----------+----------------------+-------------------------------+
+|Module Name | RTL Object       | Inference | Size (Depth x Width) | Primitives                    | 
++------------+------------------+-----------+----------------------+-------------------------------+
+|MipsCPU     | mips_ram/ram_reg | Implied   | 1 K x 32             | RAM64X1D x 32  RAM64M x 160   | 
++------------+------------------+-----------+----------------------+-------------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ALU         | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ALU         | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:00:58 . Memory (MB): peak = 840.691 ; gain = 551.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:00:59 . Memory (MB): peak = 854.645 ; gain = 565.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+------------------+-----------+----------------------+-------------------------------+
+|Module Name | RTL Object       | Inference | Size (Depth x Width) | Primitives                    | 
++------------+------------------+-----------+----------------------+-------------------------------+
+|MipsCPU     | mips_ram/ram_reg | Implied   | 1 K x 32             | RAM64X1D x 32  RAM64M x 160   | 
++------------+------------------+-----------+----------------------+-------------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:56 ; elapsed = 00:01:03 . Memory (MB): peak = 970.270 ; gain = 681.371
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:58 ; elapsed = 00:01:04 . Memory (MB): peak = 970.270 ; gain = 681.371
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:58 ; elapsed = 00:01:04 . Memory (MB): peak = 970.270 ; gain = 681.371
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:58 ; elapsed = 00:01:05 . Memory (MB): peak = 970.270 ; gain = 681.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:58 ; elapsed = 00:01:05 . Memory (MB): peak = 970.270 ; gain = 681.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:58 ; elapsed = 00:01:05 . Memory (MB): peak = 970.270 ; gain = 681.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:58 ; elapsed = 00:01:05 . Memory (MB): peak = 970.270 ; gain = 681.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |dist_mem_gen_0 |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |dist_mem_gen_0 |     1|
+|2     |BUFG           |     4|
+|3     |CARRY4         |   450|
+|4     |DSP48E1        |     3|
+|5     |LUT1           |    90|
+|6     |LUT2           |   292|
+|7     |LUT3           |  1256|
+|8     |LUT4           |   326|
+|9     |LUT5           |   304|
+|10    |LUT6           |  1218|
+|11    |MUXF7          |   348|
+|12    |MUXF8          |    32|
+|13    |RAM64M         |   160|
+|14    |RAM64X1D       |    32|
+|15    |FDCE           |  1136|
+|16    |FDRE           |    55|
+|17    |LD             |    38|
+|18    |IBUF           |     9|
+|19    |OBUF           |    16|
++------+---------------+------+
+
+Report Instance Areas: 
++------+-----------------+----------+------+
+|      |Instance         |Module    |Cells |
++------+-----------------+----------+------+
+|1     |top              |          |  5801|
+|2     |  bcycle_counter |Counter   |   280|
+|3     |  cycle_counter  |Counter_0 |   278|
+|4     |  fp             |clock_cpu |    50|
+|5     |  jcycle_counter |Counter_1 |   276|
+|6     |  mips_alu       |ALU       |  1459|
+|7     |  mips_dispaly   |display   |   113|
+|8     |    xx           |clock     |    25|
+|9     |  mips_leddata   |PCreg     |    32|
+|10    |  mips_pc        |PCreg_2   |    60|
+|11    |  mips_ram       |RAM       |   432|
+|12    |  mips_regfile   |RegFiles  |  1885|
+|13    |  mips_rom       |Rom       |   757|
++------+-----------------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:58 ; elapsed = 00:01:05 . Memory (MB): peak = 970.270 ; gain = 681.371
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:43 ; elapsed = 00:00:55 . Memory (MB): peak = 970.270 ; gain = 319.102
+Synthesis Optimization Complete : Time (s): cpu = 00:00:58 ; elapsed = 00:01:05 . Memory (MB): peak = 970.270 ; gain = 681.371
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1072 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 230 instances were transformed.
+  LD => LDCE: 38 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 160 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 32 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+108 Infos, 77 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:10 . Memory (MB): peak = 970.270 ; gain = 692.844
+INFO: [Common 17-1381] The checkpoint 'D:/vivado_test/MIPS_CPU/MIPS_CPU.runs/synth_1/MipsCPU.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file MipsCPU_utilization_synth.rpt -pb MipsCPU_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 970.270 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 28 16:41:51 2019...

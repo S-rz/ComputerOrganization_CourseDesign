@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Wed Feb 20 16:26:43 2019
+# Process ID: 93848
+# Current directory: D:/vivado_test/MIPS_CPU/MIPS_CPU.runs/dist_mem_gen_0_synth_1
+# Command line: vivado.exe -log dist_mem_gen_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dist_mem_gen_0.tcl
+# Log file: D:/vivado_test/MIPS_CPU/MIPS_CPU.runs/dist_mem_gen_0_synth_1/dist_mem_gen_0.vds
+# Journal file: D:/vivado_test/MIPS_CPU/MIPS_CPU.runs/dist_mem_gen_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source dist_mem_gen_0.tcl -notrace
